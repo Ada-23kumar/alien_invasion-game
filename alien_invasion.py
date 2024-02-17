@@ -16,7 +16,7 @@ def run_game():
     bg_color = pygame.Color(23, 193, 199)
     # Game objects
     while True:
-        gf.check_events()
+        gf.check_events(ship)
         gf.update_screen(ai_settings, screen, ship)
         screen.fill(ai_settings.bg_color)
         for event in pygame.event.get():
